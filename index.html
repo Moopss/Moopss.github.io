@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>待ち時間共有プラットフォーム</title>
+</head>
+<body>
+  <header>
+    <h1>カフェイキタイ</h1>
+  </header>
+  <main>
+	  <div id="map" style="width: 100%; height: 400px;"></div>
+    <div id="search">
+      <input type="text" placeholder="キーワードで検索">
+      <button>検索</button>
+    </div>
+    <div id="shop-info">お店の詳細情報がここに表示されます。</div>
+
+    <div id="shop-details" class="hidden">
+      <h2>お店の名前</h2>
+      <p>住所: お店の住所</p>
+      <p>電話番号: お店の電話番号</p>
+      <p>営業時間: お店の営業時間</p>
+      <p>現在の待ち時間: <span id="wait-time">10分</span></p>
+      <button id="close-details">閉じる</button>
+  </div>
+    <div id="search-results" class="hidden">
+      <ul>
+        <!-- 検索結果がここに表示されます -->
+      </ul>
+      <button id="close-results">閉じる</button>
+    </div>
+
+	<!-- 省略 -->
+<div id="wait-time-report" class="hidden">
+  <h3>待ち時間を報告</h3>
+  <label for="minutes">待ち時間 (分):</label>
+  <input type="number" id="minutes" min="0" max="999">
+  <button id="submit-report">報告</button>
+  <button id="close-report">閉じる</button>
+</div>
+
+
+<div id="shop-details">
+	<button id="favorite" class="hidden">お気に入り登録</button>
+</div>
+
+</main>
+</body>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyzMJBs7TemK-XE824tmCOIKNBwTk38OU&callback=initMap"></script>
+
+</html>
