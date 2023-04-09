@@ -1,45 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
-body {
-  background-color: #f5f5f5;
-}
-
-header {
-  background-color: #424242;
-  padding: 15px 30px;
-  color: #ffffff;
+#search {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 24px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px;
-}
-
-.map {
-  background-color: #ffffff;
-  padding: 20px;
+input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.map img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .shop-details,
