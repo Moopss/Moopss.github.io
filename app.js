@@ -59,3 +59,12 @@ document.getElementById("favorite").addEventListener("click", (event) => {
 window.addEventListener("load", () => {
   // お気に入り情報の取得や状態の更新処理を実装
 });
+
+function initMap() {
+  const mapOptions = {
+    center: { lat: 35.6895, lng: 139.6917 }, // 東京の緯度経度を中心に設定
+    zoom: 12 // ズームレベル
+  };
+
+  const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
