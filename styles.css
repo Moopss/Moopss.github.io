@@ -121,3 +121,12 @@ input[type="number"] {
     font-size: 24px;
   }
 }
+
+/* お気に入りボタンのスタイル */
+.favorite {
+  background-color: #f44336;
+}
+
+.favorite:hover {
+  background-color: #d32f2f;
+}
