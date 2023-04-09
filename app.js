@@ -69,16 +69,11 @@ document.getElementById("favorite").addEventListener("click", (event) => {
   }
 });
 
-// CSSにお気に入り登録状態のスタイルを追加します
-.favorite {
-  background-color: #2196f3;
-}
+// サンプルコード: ページを読み込んだときにお気に入り状態をチェックする機能
+window.addEventListener("load", () => {
+  // ここでAPIからお気に入り情報を取得して、お気に入り状態を更新する処理を実装する
+  // 例えば、お気に入り登録済みの場合は、お気に入りボタンの文字を「お気に入り解除」に変更し、
+  // お気に入り状態を表すCSSクラス「favorited」を付与するなどの処理を行う
+});
 
-//map
-function initMap() {
-  const mapOptions = {
-    zoom: 14,
-    center: { lat: 35.6895, lng: 139.6917 }, // 例: 東京の緯度経度
-  };
-  const map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
+
